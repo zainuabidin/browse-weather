@@ -1,0 +1,29 @@
+
+
+body {
+    color: whitesmoke;
+    background-color:
+    #3686AB;
+}
+
+header {
+    text-align: center;
+    
+}
+
+
+
+aside {
+    background-color: #46A8D4  ;
+    
+    
+}
+
+
+
+
+.card {
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+}
