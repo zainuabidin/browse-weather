@@ -1,3 +1,10 @@
+deployed link:https://zainuabidin.github.io/browse-weather/
+github link:https://github.com/zainuabidin/browse-weather
+
+
+
+
+
 # 06 Server-Side APIs: Weather Dashboard
 
 ## Your Task
