@@ -17,35 +17,69 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-info">
-      <h1 class="col-md-12">Weather Dashboard</h1>
-      <p id="demo"></p>
+    <header class="bg-info text-center">
+      <h1>Weather Dashboard</h1>
+      <p id="date"></p>
     </header>
-    <div>
-    <aside class="col-md-3">
+    <aside>
+    <div class="col-md-3">
       <!-- Search bar -->
       <div class="container">
         <h1>Search for a City:</h1>
+        
+        
 
-        <form>
-          <input type="text" placeholder="Search" />
-          <button type="submit">Search</button>
+        <form >
+          <input type="text" placeholder="Search" id="cityInput"/>
+          <button type="submit" onclick="getInfo">Search</button>
           <button id="clearBtn">Clear History</button>
+        
         </form>
       </div>
-    </aside>
+    </div>
+</aside>
+
+<main>
+  <h2 id="cityName">---London---</h2>
+  <div class="weather-container">
+    <div id="iconsContainer">    
+      <div class = "icons">
+          <p class="weather" id="day1"></p>
+          <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+          <p class="minValues" id="day1Min">Loading...</p>
+          <p class="maxValues" id="day1Max">Loading...</p>
+          <p class="humidity" id="day1Max">Loading...</p>
+          <p class="uv" id="day1Max">Loading...</p>
+          <p class="wind" id="day1Max">Loading...</p>
+
+      </div>
+
+
+
+
     </div>
 
 
-<main>
-    <h1>
-        Search for a city
-    </h1>
-    <h3 class="todayDate"></h3>
+
+
+  </div>
+
+
+
+
+
+
+
+
 </main>
 
 
 
+
+    
+<!-- momenys jquery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
